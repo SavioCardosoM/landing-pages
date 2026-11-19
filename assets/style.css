@@ -114,6 +114,9 @@ a { color: inherit; }
 .portfolio-footer__conteudo { display: flex; flex-direction: column; gap: 6px; color: var(--muted); font-family: monospace; font-size: .65rem; }
 .portfolio-footer p { margin: 0; }
 .portfolio-footer p span { color: var(--acid); }
+.portfolio-footer a, .footer-cookie-button { color: var(--muted); }
+.portfolio-footer a:hover, .footer-cookie-button:hover { color: var(--acid); }
+.footer-cookie-button { border: 0; padding: 0; background: transparent; font: inherit; cursor: pointer; }
 
 @media (min-width: 768px) {
   .nav { display: flex; }

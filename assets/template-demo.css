@@ -3,4 +3,7 @@
 .demo-banner a:hover { background: rgba(200,255,53,.08); }
 .demo-banner__dot { width: 5px; height: 5px; margin: 0 8px; border-radius: 50%; background: #c8ff35; }
 body.demo-banner-active { padding-top: 32px; }
+.template-demo-legal { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 8px; margin-top: 10px; }
+.template-demo-legal a, .template-demo-legal button { border: 0; padding: 0; background: transparent; color: inherit; font: inherit; text-decoration: underline; cursor: pointer; }
+.template-demo-legal button:focus-visible, .template-demo-legal a:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
 @media (max-width: 480px) { .demo-banner { font-size: 10px; } }
