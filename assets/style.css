@@ -62,8 +62,11 @@ a { color: inherit; }
 .template-grid { display: grid; gap: 16px; }
 .template-card { overflow: hidden; border: 1px solid var(--line); background: var(--panel); }
 .template-card__image { position: relative; display: block; aspect-ratio: 16 / 10; overflow: hidden; background: #202521; }
-.template-card__image img { width: 100%; height: 100%; object-fit: cover; filter: saturate(.7) contrast(1.05); transition: transform .5s ease, filter .5s ease; }
-.template-card:hover .template-card__image img { transform: scale(1.025); filter: saturate(.95) contrast(1.05); }
+.template-card__image img { display: none; }
+.template-card__image::before { content: ""; position: absolute; inset: 0; z-index: 1; background: linear-gradient(135deg, rgba(255,255,255,.06) 0%, rgba(255,255,255,0) 100%); }
+.template-card__image::after { content: ""; position: absolute; inset: 0; z-index: 2; background: linear-gradient(135deg, rgba(0,0,0,.4) 0%, rgba(0,0,0,0) 100%); }
+.template-card__image:hover::before { background: linear-gradient(135deg, rgba(255,255,255,.1) 0%, rgba(255,255,255,0) 100%); }
+.template-card__image:hover::after { background: linear-gradient(135deg, rgba(0,0,0,.6) 0%, rgba(0,0,0,0) 100%); }
 .template-card__index { position: absolute; right: 10px; top: 10px; display: grid; width: 38px; height: 38px; place-items: center; border: 1px solid rgba(255,255,255,.45); background: rgba(9,11,11,.72); font-family: monospace; font-size: .68rem; }
 .template-card__content { min-height: 188px; display: flex; flex-direction: column; padding: 22px; }
 .template-card__content > p { margin: 0 0 12px; color: var(--acid); font-family: monospace; font-size: .62rem; text-transform: uppercase; }
@@ -124,3 +127,27 @@ a { color: inherit; }
   html { scroll-behavior: auto; }
   .template-card__image img { transition: none; }
 }
+
+.template-preview { position: absolute; inset: 0; overflow: hidden; background: #111; }
+.template-preview__chrome { height: 22%; display: flex; align-items: center; gap: 5px; border-bottom: 1px solid rgba(255,255,255,.12); padding: 0 12px; background: rgba(255,255,255,.035); }
+.template-preview__chrome i { width: 6px; height: 6px; border-radius: 50%; background: var(--acid); opacity: .75; }
+.template-preview__chrome i:nth-child(2) { background: var(--cyan); }
+.template-preview__chrome i:nth-child(3) { background: #fff; }
+.template-preview__chrome span { margin-left: auto; color: rgba(255,255,255,.45); font-family: monospace; font-size: .52rem; letter-spacing: .08em; }
+.template-preview__body { position: relative; height: 78%; display: grid; align-content: center; gap: 10px; padding: 8% 12%; }
+.template-preview__body::after { content: ""; position: absolute; right: 7%; top: 12%; width: 26%; height: 76%; border: 1px solid currentColor; opacity: .2; transform: skewY(-8deg); }
+.template-preview__body b { position: relative; z-index: 2; max-width: 70%; font-family: var(--font-display); font-size: clamp(.9rem, 2vw, 1.7rem); line-height: .9; }
+.template-preview__body > span { position: relative; z-index: 2; width: 58%; height: 3px; background: currentColor; opacity: .22; }
+.template-preview__body > span:nth-of-type(2) { width: 42%; }
+.template-preview__body em { position: relative; z-index: 2; width: max-content; margin-top: 4px; border: 1px solid currentColor; padding: 6px 8px; font-family: monospace; font-size: .48rem; font-style: normal; }
+.template-preview--01 { background: linear-gradient(135deg, #17352e 0 58%, #b96f55 58% 62%, #ede7dc 62%); color: #fff; }
+.template-preview--02 { background: linear-gradient(145deg, #ede7dc 0 68%, #53685b 68%); color: #252921; }
+.template-preview--02 .template-preview__chrome { background: rgba(37,41,33,.07); border-color: rgba(37,41,33,.12); }
+.template-preview--03 { background: linear-gradient(135deg, #eee7df 0 62%, #6e3848 62%); color: #30282a; }
+.template-preview--03 .template-preview__body::after { border-radius: 50%; }
+.template-preview--04 { background: linear-gradient(135deg, #cc7357 0 62%, #f2b84b 62%); color: #26352f; }
+.template-preview--04 .template-preview__body::after { border-radius: 50%; }
+.template-preview--05 { background: linear-gradient(135deg, #efeee6 0 64%, #b9d36f 64%); color: #191b1a; }
+.template-preview--05 .template-preview__body { text-transform: uppercase; }
+.template-preview--06 { background: linear-gradient(145deg, #234f61 0 64%, #dce8e8 64%); color: #263238; }
+.template-preview--06 .template-preview__chrome { background: rgba(255,255,255,.06); }
