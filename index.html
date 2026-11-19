@@ -13,6 +13,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/config.js" defer></script>
+  <script src="assets/gallery.js" defer></script>
 </head>
 <body>
   <div class="noise" aria-hidden="true"></div>
@@ -25,7 +27,7 @@
       </a>
       <nav class="nav" aria-label="Navegação principal">
         <a href="#projetos">Projetos</a>
-        <a href="#licenciamento">Licenciamento</a>
+        <a href="#sobre">Sobre / Serviços</a>
       </nav>
       <a class="topbar__status" href="#projetos"><span></span> 6 sistemas ativos</a>
     </div>
@@ -73,7 +75,7 @@
         </div>
 
         <div class="template-grid">
-          <article class="template-card template-card--featured">
+          <article class="template-card template-card--featured" data-template="terapeuta-relacionamentos">
             <a class="template-card__image" href="templates/terapeuta-relacionamentos/index.html" aria-label="Abrir sistema Terapeuta de relacionamentos">
               <div class="template-preview template-preview--01" aria-hidden="true">
                 <div class="template-preview__chrome"><i></i><i></i><i></i><span>LANDING / 01</span></div>
@@ -84,11 +86,15 @@
             <div class="template-card__content">
               <p>Saúde / Bem-estar</p>
               <h3>Terapeuta de relacionamentos</h3>
-              <a class="template-card__link" href="templates/terapeuta-relacionamentos/index.html">Abrir sistema <span>↗</span></a>
+              <div class="template-card__actions">
+                <a class="template-card__demo" href="templates/terapeuta-relacionamentos/index.html">Ver demonstração</a>
+                <a class="template-card__buy" data-action="buy" href="#">Em breve</a>
+                <a class="template-card__custom" data-action="custom" href="#">Quero um site assim</a>
+              </div>
             </div>
           </article>
 
-          <article class="template-card">
+          <article class="template-card" data-template="psicologa-vinculos-editorial">
             <a class="template-card__image" href="templates/psicologa-vinculos-editorial/index.html" aria-label="Abrir sistema Ana Costa">
               <div class="template-preview template-preview--02" aria-hidden="true">
                 <div class="template-preview__chrome"><i></i><i></i><i></i><span>EDITORIAL / 02</span></div>
@@ -99,11 +105,15 @@
             <div class="template-card__content">
               <p>Editorial / Premium</p>
               <h3>Ana Costa — Vínculos</h3>
-              <a class="template-card__link" href="templates/psicologa-vinculos-editorial/index.html">Abrir sistema <span>↗</span></a>
+              <div class="template-card__actions">
+                <a class="template-card__demo" href="templates/psicologa-vinculos-editorial/index.html">Ver demonstração</a>
+                <a class="template-card__buy" data-action="buy" href="#">Em breve</a>
+                <a class="template-card__custom" data-action="custom" href="#">Quero um site assim</a>
+              </div>
             </div>
           </article>
 
-          <article class="template-card">
+          <article class="template-card" data-template="terapia-relacoes-elegante">
             <a class="template-card__image" href="templates/terapia-relacoes-elegante/index.html" aria-label="Abrir sistema Clara Ribeiro">
               <div class="template-preview template-preview--03" aria-hidden="true">
                 <div class="template-preview__chrome"><i></i><i></i><i></i><span>CLARA / 03</span></div>
@@ -114,11 +124,15 @@
             <div class="template-card__content">
               <p>Elegant / Soft</p>
               <h3>Clara Ribeiro — Terapia</h3>
-              <a class="template-card__link" href="templates/terapia-relacoes-elegante/index.html">Abrir sistema <span>↗</span></a>
+              <div class="template-card__actions">
+                <a class="template-card__demo" href="templates/terapia-relacoes-elegante/index.html">Ver demonstração</a>
+                <a class="template-card__buy" data-action="buy" href="#">Em breve</a>
+                <a class="template-card__custom" data-action="custom" href="#">Quero um site assim</a>
+              </div>
             </div>
           </article>
 
-          <article class="template-card">
+          <article class="template-card" data-template="terapeuta-reconexao">
             <a class="template-card__image" href="templates/terapeuta-reconexao/index.html" aria-label="Abrir sistema Luísa Martins">
               <div class="template-preview template-preview--04" aria-hidden="true">
                 <div class="template-preview__chrome"><i></i><i></i><i></i><span>RECONEXÃO / 04</span></div>
@@ -129,11 +143,15 @@
             <div class="template-card__content">
               <p>Humano / Natural</p>
               <h3>Luísa Martins — Reconexão</h3>
-              <a class="template-card__link" href="templates/terapeuta-reconexao/index.html">Abrir sistema <span>↗</span></a>
+              <div class="template-card__actions">
+                <a class="template-card__demo" href="templates/terapeuta-reconexao/index.html">Ver demonstração</a>
+                <a class="template-card__buy" data-action="buy" href="#">Em breve</a>
+                <a class="template-card__custom" data-action="custom" href="#">Quero um site assim</a>
+              </div>
             </div>
           </article>
 
-          <article class="template-card">
+          <article class="template-card" data-template="espaco-relacional">
             <a class="template-card__image" href="templates/espaco-relacional/index.html" aria-label="Abrir sistema Espaço Vínculo">
               <div class="template-preview template-preview--05" aria-hidden="true">
                 <div class="template-preview__chrome"><i></i><i></i><i></i><span>VÍNCULO / 05</span></div>
@@ -144,11 +162,15 @@
             <div class="template-card__content">
               <p>Contemporâneo / Bold</p>
               <h3>Espaço Vínculo</h3>
-              <a class="template-card__link" href="templates/espaco-relacional/index.html">Abrir sistema <span>↗</span></a>
+              <div class="template-card__actions">
+                <a class="template-card__demo" href="templates/espaco-relacional/index.html">Ver demonstração</a>
+                <a class="template-card__buy" data-action="buy" href="#">Em breve</a>
+                <a class="template-card__custom" data-action="custom" href="#">Quero um site assim</a>
+              </div>
             </div>
           </article>
 
-          <article class="template-card">
+          <article class="template-card" data-template="relacoes-conscientes">
             <a class="template-card__image" href="templates/relacoes-conscientes/index.html" aria-label="Abrir sistema Beatriz Lima">
               <div class="template-preview template-preview--06" aria-hidden="true">
                 <div class="template-preview__chrome"><i></i><i></i><i></i><span>RELATIONS / 06</span></div>
@@ -159,9 +181,26 @@
             <div class="template-card__content">
               <p>Minimal / Clinical</p>
               <h3>Beatriz Lima — Relações</h3>
-              <a class="template-card__link" href="templates/relacoes-conscientes/index.html">Abrir sistema <span>↗</span></a>
+              <div class="template-card__actions">
+                <a class="template-card__demo" href="templates/relacoes-conscientes/index.html">Ver demonstração</a>
+                <a class="template-card__buy" data-action="buy" href="#">Em breve</a>
+                <a class="template-card__custom" data-action="custom" href="#">Quero um site assim</a>
+              </div>
             </div>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-services" id="sobre" aria-labelledby="about-title">
+      <div class="container about-services__conteudo">
+        <div>
+          <p class="terminal"><span>SERVICE.MODE</span> / CUSTOM BUILD</p>
+          <h2 id="about-title">Landing pages que trabalham pelo seu negócio.</h2>
+        </div>
+        <div>
+          <p>Eu crio landing pages personalizadas, rápidas e responsivas, desenvolvidas para apresentar sua oferta com clareza e converter visitantes em contatos. Os projetos podem ser preparados para Google Ads, WhatsApp e rastreamento de conversões.</p>
+          <a class="btn btn--primary about-services__cta" href="#" data-about-whatsapp>Quero uma landing page <span>→</span></a>
         </div>
       </div>
     </section>
@@ -204,7 +243,7 @@
       </div>
       <div class="contact-bar__dados">
         <a href="mailto:contato@seudominio.com.br">contato@seudominio.com.br</a>
-        <a href="https://wa.me/5511987654321?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20sobre%20uma%20landing%20page" target="_blank" rel="noopener noreferrer">WhatsApp: (11) 98765-4321</a>
+        <a href="#" data-contact-whatsapp>WhatsApp</a>
         <span>Atendimento em todo o Brasil</span>
       </div>
     </div>

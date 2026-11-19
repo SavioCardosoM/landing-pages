@@ -1,0 +1,6 @@
+.demo-banner { position: fixed; z-index: 9999; top: 0; left: 0; width: 100%; height: 32px; display: flex; align-items: center; justify-content: center; border-bottom: 1px solid rgba(255,255,255,.12); background: rgba(9,11,11,.94); color: #edf1ee; font-family: Arial, sans-serif; font-size: 12px; backdrop-filter: blur(8px); }
+.demo-banner a { display: inline-flex; align-items: center; height: 100%; padding: 0 14px; color: #c8ff35; font-weight: 700; text-decoration: none; }
+.demo-banner a:hover { background: rgba(200,255,53,.08); }
+.demo-banner__dot { width: 5px; height: 5px; margin: 0 8px; border-radius: 50%; background: #c8ff35; }
+body.demo-banner-active { padding-top: 32px; }
+@media (max-width: 480px) { .demo-banner { font-size: 10px; } }
