@@ -94,6 +94,12 @@ a { color: inherit; }
 .whatsapp-flutuante { position: fixed; right: 18px; bottom: 18px; z-index: 30; width: 58px; height: 58px; display: grid; place-items: center; border: 4px solid #fff; border-radius: 50%; background: #25d366; box-shadow: 0 8px 24px rgba(28,87,54,.28); }
 .whatsapp-flutuante svg { width: 29px; fill: #fff; }
 
+.photo-placeholder { min-height: 360px; display: grid; place-content: center; gap: 8px; border: 2px dashed rgba(223,183,159,.7); border-radius: 16px; background: rgba(223,183,159,.12); color: #f8efe7; text-align: center; }
+.photo-placeholder span { font-family: var(--fonte-titulo); font-size: 1.35rem; }
+.photo-placeholder small { color: rgba(255,255,255,.65); }
+.photo-placeholder--hero { border-radius: 220px 220px 16px 16px; }
+.back-to-portfolio { position: fixed; left: 18px; bottom: 18px; z-index: 40; border: 1px solid rgba(255,255,255,.18); border-radius: 999px; padding: 10px 14px; background: rgba(23,53,46,.94); color: #fff; font-size: .72rem; font-weight: 700; text-decoration: none; box-shadow: 0 8px 24px rgba(0,0,0,.18); }
+
 :focus-visible { outline: 3px solid #e3ae91; outline-offset: 4px; }
 
 @media (min-width: 768px) {
